@@ -353,11 +353,7 @@
         
           
             <hr>
-<ul>
-<li>title: First blog with blablabla…</li>
-<li>date: 2017-09-29 13:57:02</li>
-<li>tags:日常笔记</li>
-</ul>
+<p>title: SSH的生成与使用</p>
 <h2 id="划重点"><a href="#划重点" class="headerlink" title="划重点"></a>划重点</h2><p> 今天第一次用hexo，中间被各种新公司地点的办公网络限制等问题，搞的直上火；anyway，最终还是顺利装上并使用了。<br><br> 借着这次机会正好把 生成ssh的公钥的一些命令顺便记录一下。方便以后再给github仓库传代码时，省的再去google、百度其他人文章了。</p>
 <h2 id="https-和-SSH-的区别："><a href="#https-和-SSH-的区别：" class="headerlink" title="https 和 SSH 的区别："></a>https 和 SSH 的区别：</h2><h4 id="1-前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加-SSH-key-，否则无法克隆。"><a href="#1-前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加-SSH-key-，否则无法克隆。" class="headerlink" title="1.前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。"></a>1.前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。</h4><h4 id="2-https-url-在push的时候是需要验证用户名和密码的；而-SSH-在push的时候，是不需要输入用户名的，如果配置SSH-key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。"><a href="#2-https-url-在push的时候是需要验证用户名和密码的；而-SSH-在push的时候，是不需要输入用户名的，如果配置SSH-key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。" class="headerlink" title="2.https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。"></a>2.https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。</h4><h2 id="在-github-上添加-SSH-key-的步骤："><a href="#在-github-上添加-SSH-key-的步骤：" class="headerlink" title="在 github 上添加 SSH key 的步骤："></a>在 github 上添加 SSH key 的步骤：</h2><h4 id="1-首先检查你电脑是否已经有-SSH-key"><a href="#1-首先检查你电脑是否已经有-SSH-key" class="headerlink" title="1.首先检查你电脑是否已经有 SSH key"></a>1.首先检查你电脑是否已经有 SSH key</h4><p>运行 git Bash 客户端，输入如下代码：</p>
 <pre><code>$ cd ~/.ssh
