@@ -90,9 +90,11 @@ scheme: Gemini
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+  
+social:
   #LinkLabel: Link
-
+  GitHub: https://github.com/yesman0319
+  微博: http://weibo.com/u/3567107075
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -104,8 +106,8 @@ social_icons:
   transition: false
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: https://github.com/yesman0319
-  微博: http://weibo.com/u/3567107075
+  GitHub: github
+  微博: weibo
   E-Mail: 
   Google: google
   Twitter: twitter
@@ -190,7 +192,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
@@ -324,7 +326,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname:
   count: true
 
