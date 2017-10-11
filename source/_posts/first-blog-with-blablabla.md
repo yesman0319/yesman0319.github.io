@@ -50,10 +50,10 @@ title: SSH的生成与使用
 
 #### 3.给github添加ssh
 
- 3.1首先你需要拷贝 id_rsa.pub 文件的内容，你可以用编辑器打开文件复制，也可以用git命令复制该文件的内容，如：
+##### 3.1首先你需要拷贝 id_rsa.pub 文件的内容，你可以用编辑器打开文件复制，也可以用git命令复制该文件的内容，如：
 		
 		$ clip < ~/.ssh/id_rsa.pub
 
- 3.2登录你的github账号，从设置（Settings ）进入，然后点击菜单栏的 SSH key 进入页面添加 SSH key。
+##### 3.2登录你的github账号，从设置（Settings ）进入，然后点击菜单栏的 SSH key 进入页面添加 SSH key。
 
 * 以上是参考网上的博客进行记录的.
